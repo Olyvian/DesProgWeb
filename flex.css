@@ -4,15 +4,18 @@ body,html{
 }
 body{
     font-family: Arial,Arial, Helvetica, sans-serif;
-    background-color: #ddd;
+    background-color: #067594;
     line-height: 1.65;
-    padding-bottom: 1000px;
 }
 .container-satu{
     display: flex;
-    width: 800px;
+    justify-content: center;
+    width: 1000px;
     margin: 50px auto;
     background-color: #fff;
     padding: 20px;
     box-sizing: border-box;
+}
+.sidebar-satu{
+    min-width: 300px;
 }
