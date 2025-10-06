@@ -1,20 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>
+        
+    </title>
+    <script src="jquery-3.7.1.slim.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("h2").hide();
+            $(".subjudul").hide();
+            $("#paragraf").hide();
+            $("#paragraf.dua").hide(); // This selector is invalid because of the duplicate ID
+            $("div p.paragraf").hide();
+        });
+    });
+    </script>
 </head>
 <body>
-    <input type="button" id="button1" value="Klik saya">
+    <h2>Ini adalah Judul Bab</h2>
+    <h3 class="subjudul">Ini adalah Sub Judul Bab</h3>
+    <p id="paragraf">Ini adalah paragraf pertama</p>
+    <p id="paragraf" class="dua">Ini adalah paragraf kedua</p> <div>
+        <p class="paragraf">
+            Ini adalah paragraf ketiga
+        </p>
+    </div>
+    <p>Ini paragraf yang akan tetap ditampilkan</p>
+    <button>Klik Saya!</button>
 </body>
-
-<script src="jquery-3.7.1.slim.min.js"></script>
-<script>
-    $(document).ready(function(){
-    $("#button1").click(function(){
-        alert("Ini praktikum minggu ke 4");
-    });
-});
-</script>
 </html>
